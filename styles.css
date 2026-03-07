@@ -4,7 +4,7 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 4rem 11rem auto;
 }
 
@@ -142,6 +142,7 @@
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
 }
 
 .article .proyects{
@@ -149,17 +150,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: 1/3;
-    grid-template-rows: 4rem repeat(3,auto);
+    grid-template-rows: 3rem repeat(3,auto);
+    gap: 1rem;
 }
 
 .proyects > p{
     font-size: 25px;
     grid-column: 1/3;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
 }
 
 .proyects .card{
     display: grid;
     grid-template-columns: 1fr 30fr;
+    border: 1px solid black;
 }
 
 .card .color{
@@ -189,18 +194,46 @@
 .article .announcements{
     grid-column: 2/3;
     display: grid;
+    grid-row: 1/2;
+    grid-template-rows: 3rem auto;
+    gap: 1rem;
+}
+
+.announcements .anuncio{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements > p{
+    font-size: 25px;
+    margin-top: 1rem;
 }
 
 .article .Trendings{
     grid-column: 2/3;
     display: grid;
+    grid-row: 2/3;
+    grid-template-rows: 3rem auto;
+    gap: 1rem;
 }
 
 .Trendings .friends{
     display: flex;
+    border: 1px solid brown;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Trendings > p{
+    font-size: 25px;
+    margin-top: 1rem;
 }
 
 .friends > img{
-    height: 8rem;
+    height: 6rem;
     width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 2rem;
 }
