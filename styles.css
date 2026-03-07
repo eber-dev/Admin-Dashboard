@@ -8,7 +8,7 @@
 }
 
 .header{
-    grid-column: 2;
+    grid-column: 2/3;
     display: flex;
     height: 3.5rem;
     justify-content: space-between;
@@ -59,14 +59,42 @@
 
 .sidebar{
     border: 1px solid blue;
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    display: grid;
+}
+
+.sidebar .dashboard1{
+    display: flex;
+}
+
+.dashboard1 > img{
+    height: 3.5rem;
+    width: auto;
+}
+
+.sidebar .dashboard2 > div{
+    display: flex;
+}
+
+.dashboard2 > div > img{
+    height: 3rem;
+    width: auto;
+}
+
+.sidebar .dashboard3 > div{
+    display: flex;
+}
+
+.dashboard3 > div > img {
+    height: 3rem;
+    width: auto;
 }
 
 .nav{
-    grid-column: 2;
+    grid-column: 2/3;
 }
 
 .article{
-    grid-column: 2;
+    grid-column: 2/3;
 }
