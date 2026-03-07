@@ -4,7 +4,7 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 4rem 11rem auto;
 }
 
@@ -148,6 +148,8 @@
     grid-column: 1/2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row: 1/3;
+    grid-template-rows: 4rem repeat(3,auto);
 }
 
 .proyects > p{
