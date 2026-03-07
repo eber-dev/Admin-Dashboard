@@ -4,15 +4,15 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
 }
 
 .header{
     grid-column: 2/3;
     display: flex;
-    height: 3.5rem;
     justify-content: space-between;
-    padding-inline: 2rem;
+    padding-inline: 2.2rem;
+    border: 1px solid green;
 }
 
 .header .busqueda{
@@ -60,7 +60,7 @@
 .sidebar{
     border: 1px solid blue;
     grid-column: 1/2;
-    grid-row: 1/-1;
+    grid-row: 1/3;
     display: grid;
 }
 
@@ -93,6 +93,46 @@
 
 .nav{
     grid-column: 2/3;
+    display: flex;
+    border: 1px solid blue;
+    justify-content: space-between;
+    padding-inline: 2.2rem;
+}
+
+.nav .perfil{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.perfil > img{
+    height: 10rem;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil > div > p{
+    font-size: 20px;
+}
+
+.perfil > div > h2{
+    font-size: 25px;
+}
+
+.nav .botones{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.botones button {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-inline: 2rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 1.1rem;
 }
 
 .article{
