@@ -65,6 +65,7 @@
     display: grid;
     grid-template-rows: 5rem 30rem 12rem;
     align-items: center;
+    background-color: rgb(5, 206, 5);
 }
 
 .sidebar .dashboard1{
@@ -72,16 +73,19 @@
     align-items: center;
     gap: 1rem;
     padding-left: 1rem;
+    padding-right: 3rem;
 }
 
 .dashboard1 > img{
     height: 4.5rem;
     width: auto;
+    filter: invert(1);
 }
 
 .dashboard1 > p{
     font-size: 35px;
     font-weight: bold;
+    color: white;
 }
 
 .sidebar .dashboard2{
@@ -99,11 +103,13 @@
 .dashboard2 > div > p{
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .dashboard2 > div > img{
-    height: 3rem;
+    height: 3.2rem;
     width: auto;
+    filter: invert(1);
 }
 
 .sidebar .dashboard3{
@@ -121,11 +127,13 @@
 .dashboard3 > div > p{
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .dashboard3 > div > img {
-    height: 3rem;
+    height: 3.2rem;
     width: auto;
+    filter: invert(1);
 }
 
 .nav{
@@ -171,6 +179,9 @@
     border: 1px solid black;
     border-radius: 25px;
     font-size: 1.1rem;
+    background-color: orange;
+    font-weight: 800;
+    color: white;
 }
 
 .article{
@@ -181,6 +192,7 @@
     padding-right: 2.2rem;
     padding-left: 1rem;
     column-gap: 4rem;
+    background-color: rgb(243, 240, 240);
 }
 
 .article .proyects{
@@ -205,6 +217,7 @@
     border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
+    background-color: white;
 }
 
 .card .color{
@@ -266,6 +279,7 @@
     border-radius: 10px;
     padding-inline: 1rem;
     padding-top: 0.5rem;
+    background-color: white;
 }
 
 .anuncio > h3{
@@ -298,6 +312,7 @@
     gap: 1.5rem;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: white;
 }
 
 .Trendings > p{
